@@ -192,7 +192,7 @@ export default function App() {
       <section className="contact">
         <div className="contact-container">
           <div className="contact-form">
-            <h2 style={{ text: "" }}>
+            <h2 style={{ color: "white" }}>
               Connect With <span className="highlight">The Future</span>
             </h2>
             <p className="contact-subtitle">

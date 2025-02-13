@@ -350,11 +350,10 @@ h1 {
 }
 
 .contact-card {
-  background: #ffffff;
+  background: rgba(26, 32, 44, 0.95);
   padding: 1.5rem;
   border-radius: 15px;
   border: 2px solid var(--secondary);
-  color: #000000;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -383,12 +382,12 @@ h1 {
 }
 
 .contact-info h3 {
-  color: #000;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .contact-info p {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import react, { useState } from "react";
 import {
   SunIcon,
   MoonIcon,
@@ -20,6 +20,26 @@ import "./App.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('form data:', formData);
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -41,7 +61,7 @@ export default function App() {
 
       <section className="hero">
         <div className="ai-badge">
-          <BoltIcon className="icon" />
+          <BoltIcon className="advance-ai-icon"/>
           Powered by Advanced AI
         </div>
         <h1>
@@ -63,7 +83,11 @@ export default function App() {
             <BeakerIcon className="icon" /> AI-Powered
           </div>
         </div>
-        <button className="cta-button">Experience the Future</button>
+        <button className="cta-button">
+          <a style={{ textDecoration: 'none', color: '#fff' }} href="#demo">
+            Experience the Future
+          </a>
+        </button>
       </section>
 
       <section className="benefits">
@@ -129,7 +153,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="demo">
+      <section className="demo" id="demo">
         <div className="demo-content">
           <h2>
             Experience Our <span className="highlight">AI Voice Agent</span>
@@ -138,11 +162,15 @@ export default function App() {
             Call our demo line to interact with our intelligent scheduling
             assistant
           </p>
-          <div className="phone-number">
-            <PhoneIcon className="icon" />
-            <span>+1 224 2342434</span>
+          <div className="demo-content-container">
+            <div className="phone-number">
+              <PhoneIcon className="icon" />
+              <span>+1 (760) 825 0076</span>
+            </div>
+            <a href="tel:+17608250076">
+              <button className="cta-button">Try Demo Now</button>
+              </a>
           </div>
-          <button className="cta-button">Try Demo Now</button>
         </div>
       </section>
 
@@ -153,7 +181,7 @@ export default function App() {
         <div className="team-grid">
           <div className="team-member supervisor">
             <UserGroupIcon className="avatar-icon" />
-            <h3>Sir Asif</h3>
+            <h3>Lec. Asif Mehmood</h3>
             <p>Supervisor</p>
           </div>
           <div className="team-member">
@@ -189,7 +217,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="contact">
+      <section className="contact" id="contact">
         <div className="contact-container">
           <div className="contact-form">
             <h2 style={{ color: "white" }}>
@@ -198,12 +226,15 @@ export default function App() {
             <p className="contact-subtitle">
               Ready to revolutionize your healthcare scheduling?
             </p>
-            <form className="future-form">
+            <form className="future-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
                   type="text"
                   placeholder="Your Name"
                   className="future-input"
+                  onChange={handleInputChange}
+                  name="name"
+                  value={formData.name}
                 />
               </div>
               <div className="form-group">
@@ -211,6 +242,9 @@ export default function App() {
                   type="email"
                   placeholder="Your Email"
                   className="future-input"
+                  onChange={handleInputChange}
+                  name="email"
+                  value={formData.email}
                 />
               </div>
               <div className="form-group">
@@ -218,6 +252,9 @@ export default function App() {
                   placeholder="Your Message"
                   className="future-input"
                   rows="4"
+                  onChange={handleInputChange}
+                  name="message"
+                  value={formData.message}
                 ></textarea>
               </div>
               <button type="submit" className="future-button">
@@ -230,21 +267,21 @@ export default function App() {
               <EnvelopeIcon className="contact-icon" />
               <div className="contact-info">
                 <h3>Email Us</h3>
-                <p>contact@voxaai.com</p>
+                <p>mehdikhanofficial@gmail.com</p>
               </div>
             </div>
             <div className="contact-card">
               <PhoneIcon className="contact-icon" />
               <div className="contact-info">
                 <h3>Call Us</h3>
-                <p>+1 234 567 8900</p>
+                <p>+92 313 2297998</p>
               </div>
             </div>
             <div className="contact-card">
               <MapPinIcon className="contact-icon" />
               <div className="contact-info">
                 <h3>Visit Us</h3>
-                <p>123 Tech Street, Innovation City</p>
+                <p>National University of Technology (NUTECH) Islamabad</p>
               </div>
             </div>
           </div>

@@ -299,11 +299,11 @@ h1 {
 }
 
 .contact-form {
-  background: rgba(255, 255, 255, 0.05);
+  background: #1a1a2e;
   padding: 3rem;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 15px var(--primary);
 }
 
 .contact-subtitle {
@@ -357,19 +357,21 @@ h1 {
 }
 
 .contact-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: #1a1a2e;
   padding: 1.5rem;
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--secondary);
   display: flex;
   align-items: center;
   gap: 1.5rem;
   transition: all 0.3s;
+  box-shadow: 0 0 10px var(--secondary);
 }
 
 .contact-card:hover {
   transform: translateX(10px);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent);
 }
 
 .contact-icon {

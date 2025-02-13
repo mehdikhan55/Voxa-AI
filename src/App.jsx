@@ -32,8 +32,8 @@ export default function App() {
           <BoltIcon className="icon" />
           Powered by Advanced AI
         </div>
-        <h1>Revolutionary <span className="highlight">AI Voice Agent</span></h1>
-        <p className="hero-subtitle">Transform Healthcare Scheduling with Next-Generation Voice Intelligence</p>
+        <h1>Hospital Appointments Made Simple with <span className="highlight">AI Voice Agent</span></h1>
+        <p className="hero-subtitle">Revolutionizing Healthcare Scheduling Through Intelligent Voice Technology</p>
         <div className="hero-features">
           <div><CheckCircleIcon className="icon" /> Smart Scheduling</div>
           <div><ClockIcon className="icon" /> 24/7 Availability</div>

@@ -196,12 +196,12 @@ export default function App() {
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
-            <h3>Tayyaba Afzaal</h3>
+            <h3>Attique ur Rehman</h3>
             <p>Team Member</p>
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
-            <h3>Attique ur Rehman</h3>
+            <h3>Tayyaba Afzaal</h3>
             <p>Team Member</p>
           </div>
           <div className="team-member">

@@ -20,7 +20,6 @@ export default function App() {
     <div className={`app ${darkMode ? 'dark' : ''}`}>
       <nav>
         <div className="logo">
-          <CpuChipIcon className="icon" />
           VOXA AI
         </div>
         <button onClick={toggleDarkMode} className="theme-toggle">
@@ -147,22 +146,45 @@ export default function App() {
       </section>
 
       <section className="contact">
-        <h2>Get in Touch</h2>
-        <div className="contact-info">
-          <div className="contact-card">
-            <EnvelopeIcon className="icon" />
-            <h3>Email Us</h3>
-            <p>contact@voxaai.com</p>
+        <div className="contact-container">
+          <div className="contact-form">
+            <h2>Connect With <span className="highlight">The Future</span></h2>
+            <p className="contact-subtitle">Ready to revolutionize your healthcare scheduling?</p>
+            <form className="future-form">
+              <div className="form-group">
+                <input type="text" placeholder="Your Name" className="future-input" />
+              </div>
+              <div className="form-group">
+                <input type="email" placeholder="Your Email" className="future-input" />
+              </div>
+              <div className="form-group">
+                <textarea placeholder="Your Message" className="future-input" rows="4"></textarea>
+              </div>
+              <button type="submit" className="future-button">Send Message</button>
+            </form>
           </div>
-          <div className="contact-card">
-            <PhoneIcon className="icon" />
-            <h3>Call Us</h3>
-            <p>+1 234 567 8900</p>
-          </div>
-          <div className="contact-card">
-            <MapPinIcon className="icon" />
-            <h3>Visit Us</h3>
-            <p>123 Tech Street, Innovation City</p>
+          <div className="contact-details">
+            <div className="contact-card">
+              <EnvelopeIcon className="contact-icon" />
+              <div className="contact-info">
+                <h3>Email Us</h3>
+                <p>contact@voxaai.com</p>
+              </div>
+            </div>
+            <div className="contact-card">
+              <PhoneIcon className="contact-icon" />
+              <div className="contact-info">
+                <h3>Call Us</h3>
+                <p>+1 234 567 8900</p>
+              </div>
+            </div>
+            <div className="contact-card">
+              <MapPinIcon className="contact-icon" />
+              <div className="contact-info">
+                <h3>Visit Us</h3>
+                <p>123 Tech Street, Innovation City</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

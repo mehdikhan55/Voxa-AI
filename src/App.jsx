@@ -68,6 +68,36 @@ export default function App() {
         </div>
       </section>
 
+      <section className="how-it-works">
+        <h2>How Our <span className="highlight">AI Voice Agent</span> Works</h2>
+        <div className="steps">
+          <div className="step">
+            <div className="step-number">1</div>
+            <ChatBubbleBottomCenterTextIcon className="step-icon" />
+            <h3>Call Our Number</h3>
+            <p>Connect with our intelligent AI assistant instantly</p>
+          </div>
+          <div className="step">
+            <div className="step-number">2</div>
+            <ArrowPathIcon className="step-icon" />
+            <h3>State Your Needs</h3>
+            <p>Natural conversation to understand your preferences</p>
+          </div>
+          <div className="step">
+            <div className="step-number">3</div>
+            <ClockIcon className="step-icon" />
+            <h3>Check Availability</h3>
+            <p>AI checks and suggests available time slots</p>
+          </div>
+          <div className="step">
+            <div className="step-number">4</div>
+            <ShieldCheckIcon className="step-icon" />
+            <h3>Confirm Booking</h3>
+            <p>Secure and instant appointment confirmation</p>
+          </div>
+        </div>
+      </section>
+
       <section className="demo">
         <div className="demo-content">
           <h2>Experience Our <span className="highlight">AI Voice Agent</span></h2>
@@ -117,36 +147,6 @@ export default function App() {
             <UserGroupIcon className="avatar-icon" />
             <h3>Hassan Javed</h3>
             <p>Voice AI Expert</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="how-it-works">
-        <h2>How Our <span className="highlight">AI Voice Agent</span> Works</h2>
-        <div className="steps">
-          <div className="step">
-            <div className="step-number">1</div>
-            <ChatBubbleBottomCenterTextIcon className="step-icon" />
-            <h3>Call Our Number</h3>
-            <p>Connect with our intelligent AI assistant instantly</p>
-          </div>
-          <div className="step">
-            <div className="step-number">2</div>
-            <ArrowPathIcon className="step-icon" />
-            <h3>State Your Needs</h3>
-            <p>Natural conversation to understand your preferences</p>
-          </div>
-          <div className="step">
-            <div className="step-number">3</div>
-            <ClockIcon className="step-icon" />
-            <h3>Check Availability</h3>
-            <p>AI checks and suggests available time slots</p>
-          </div>
-          <div className="step">
-            <div className="step-number">4</div>
-            <ShieldCheckIcon className="step-icon" />
-            <h3>Confirm Booking</h3>
-            <p>Secure and instant appointment confirmation</p>
           </div>
         </div>
       </section>

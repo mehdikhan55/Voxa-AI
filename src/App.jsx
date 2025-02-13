@@ -1,29 +1,41 @@
-
-import { useState } from 'react';
-import { 
-  SunIcon, MoonIcon, PhoneIcon, EnvelopeIcon, MapPinIcon,
-  BoltIcon, ClockIcon, UserGroupIcon, ChartBarIcon,
-  ChatBubbleBottomCenterTextIcon, CpuChipIcon, ShieldCheckIcon,
-  ArrowPathIcon, CheckCircleIcon, BeakerIcon
-} from '@heroicons/react/24/outline';
-import './App.css';
+import { useState } from "react";
+import {
+  SunIcon,
+  MoonIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+  MapPinIcon,
+  BoltIcon,
+  ClockIcon,
+  UserGroupIcon,
+  ChartBarIcon,
+  ChatBubbleBottomCenterTextIcon,
+  CpuChipIcon,
+  ShieldCheckIcon,
+  ArrowPathIcon,
+  CheckCircleIcon,
+  BeakerIcon,
+} from "@heroicons/react/24/outline";
+import "./App.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.documentElement.classList.toggle('dark');
+    document.documentElement.classList.toggle("dark");
   };
 
   return (
-    <div className={`app ${darkMode ? 'dark' : ''}`}>
+    <div className={`app ${darkMode ? "dark" : ""}`}>
       <nav>
-        <div className="logo">
-          VOXA AI
-        </div>
+        <div className="logo">VOXA AI</div>
         <button onClick={toggleDarkMode} className="theme-toggle">
-          {darkMode ? <SunIcon className="icon" /> : <MoonIcon className="icon" />}
+          {darkMode ? (
+            <SunIcon className="icon" />
+          ) : (
+            <MoonIcon className="icon" />
+          )}
         </button>
       </nav>
 
@@ -32,23 +44,40 @@ export default function App() {
           <BoltIcon className="icon" />
           Powered by Advanced AI
         </div>
-        <h1>Hospital Appointments Made Simple with <span className="highlight">AI Voice Agent</span></h1>
-        <p className="hero-subtitle">Revolutionizing Healthcare Scheduling Through Intelligent Voice Technology</p>
+        <h1>
+          Hospital Appointments Made Simple with{" "}
+          <span className="highlight">AI Voice Agent</span>
+        </h1>
+        <p className="hero-subtitle">
+          Revolutionizing Healthcare Scheduling Through Intelligent Voice
+          Technology
+        </p>
         <div className="hero-features">
-          <div><CheckCircleIcon className="icon" /> Smart Scheduling</div>
-          <div><ClockIcon className="icon" /> 24/7 Availability</div>
-          <div><BeakerIcon className="icon" /> AI-Powered</div>
+          <div>
+            <CheckCircleIcon className="icon" /> Smart Scheduling
+          </div>
+          <div>
+            <ClockIcon className="icon" /> 24/7 Availability
+          </div>
+          <div>
+            <BeakerIcon className="icon" /> AI-Powered
+          </div>
         </div>
         <button className="cta-button">Experience the Future</button>
       </section>
 
       <section className="benefits">
-        <h2>Why Choose <span className="highlight">Voxa AI</span></h2>
+        <h2>
+          Why Choose <span className="highlight">Voxa AI</span>
+        </h2>
         <div className="benefits-grid">
           <div className="benefit-card">
             <ClockIcon className="card-icon" />
             <h3>24/7 Availability</h3>
-            <p>Book appointments anytime, anywhere with our always-on AI assistant</p>
+            <p>
+              Book appointments anytime, anywhere with our always-on AI
+              assistant
+            </p>
           </div>
           <div className="benefit-card">
             <ChartBarIcon className="card-icon" />
@@ -69,7 +98,9 @@ export default function App() {
       </section>
 
       <section className="how-it-works">
-        <h2>How Our <span className="highlight">AI Voice Agent</span> Works</h2>
+        <h2>
+          How Our <span className="highlight">AI Voice Agent</span> Works
+        </h2>
         <div className="steps">
           <div className="step">
             <div className="step-number">1</div>
@@ -100,8 +131,13 @@ export default function App() {
 
       <section className="demo">
         <div className="demo-content">
-          <h2>Experience Our <span className="highlight">AI Voice Agent</span></h2>
-          <p>Call our demo line to interact with our intelligent scheduling assistant</p>
+          <h2>
+            Experience Our <span className="highlight">AI Voice Agent</span>
+          </h2>
+          <p>
+            Call our demo line to interact with our intelligent scheduling
+            assistant
+          </p>
           <div className="phone-number">
             <PhoneIcon className="icon" />
             <span>+1 224 2342434</span>
@@ -111,42 +147,44 @@ export default function App() {
       </section>
 
       <section className="team">
-        <h2>Meet Our <span className="highlight">Visionary Team</span></h2>
+        <h2>
+          Meet Our <span className="highlight">Visionary Team</span>
+        </h2>
         <div className="team-grid">
           <div className="team-member supervisor">
             <UserGroupIcon className="avatar-icon" />
             <h3>Sir Asif</h3>
-            <p>Supervisor & AI Architect</p>
+            <p>Supervisor</p>
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
             <h3>Mehdi Ali</h3>
-            <p>Lead Developer</p>
+            <p>Team Member</p>
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
             <h3>Israr Qayum</h3>
-            <p>AI Engineer</p>
+            <p>Team Member</p>
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
             <h3>Tayyaba Afzaal</h3>
-            <p>UX Designer</p>
+            <p>Team Member</p>
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
             <h3>Attique ur Rehman</h3>
-            <p>Backend Engineer</p>
+            <p>Team Member</p>
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
             <h3>Taha Khan</h3>
-            <p>ML Specialist</p>
+            <p>Team Member</p>
           </div>
           <div className="team-member">
             <UserGroupIcon className="avatar-icon" />
             <h3>Hassan Javed</h3>
-            <p>Voice AI Expert</p>
+            <p>Team Member</p>
           </div>
         </div>
       </section>
@@ -154,19 +192,37 @@ export default function App() {
       <section className="contact">
         <div className="contact-container">
           <div className="contact-form">
-            <h2>Connect With <span className="highlight">The Future</span></h2>
-            <p className="contact-subtitle">Ready to revolutionize your healthcare scheduling?</p>
+            <h2 style={{ text: "" }}>
+              Connect With <span className="highlight">The Future</span>
+            </h2>
+            <p className="contact-subtitle">
+              Ready to revolutionize your healthcare scheduling?
+            </p>
             <form className="future-form">
               <div className="form-group">
-                <input type="text" placeholder="Your Name" className="future-input" />
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="future-input"
+                />
               </div>
               <div className="form-group">
-                <input type="email" placeholder="Your Email" className="future-input" />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="future-input"
+                />
               </div>
               <div className="form-group">
-                <textarea placeholder="Your Message" className="future-input" rows="4"></textarea>
+                <textarea
+                  placeholder="Your Message"
+                  className="future-input"
+                  rows="4"
+                ></textarea>
               </div>
-              <button type="submit" className="future-button">Send Message</button>
+              <button type="submit" className="future-button">
+                Send Message
+              </button>
             </form>
           </div>
           <div className="contact-details">

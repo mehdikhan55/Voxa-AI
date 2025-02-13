@@ -291,7 +291,7 @@ h1 {
 }
 
 .contact-form {
-  background: #ffffff;
+   background: rgba(26, 32, 44, 0.95);
   padding: 3rem;
   border-radius: 20px;
   border: 2px solid var(--primary);

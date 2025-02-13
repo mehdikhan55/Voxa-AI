@@ -84,37 +84,37 @@ export default function App() {
         <h2>Meet Our <span className="highlight">Visionary Team</span></h2>
         <div className="team-grid">
           <div className="team-member supervisor">
-            <img src="https://api.dicebear.com/7.x/initials/svg?seed=SA" alt="Sir Asif" className="avatar"/>
+            <UserGroupIcon className="avatar-icon" />
             <h3>Sir Asif</h3>
             <p>Supervisor & AI Architect</p>
           </div>
           <div className="team-member">
-            <img src="https://api.dicebear.com/7.x/initials/svg?seed=MA" alt="Mehdi Ali" className="avatar"/>
+            <UserGroupIcon className="avatar-icon" />
             <h3>Mehdi Ali</h3>
             <p>Lead Developer</p>
           </div>
           <div className="team-member">
-            <img src="https://api.dicebear.com/7.x/initials/svg?seed=IQ" alt="Israr Qayum" className="avatar"/>
+            <UserGroupIcon className="avatar-icon" />
             <h3>Israr Qayum</h3>
             <p>AI Engineer</p>
           </div>
           <div className="team-member">
-            <img src="https://api.dicebear.com/7.x/initials/svg?seed=TA" alt="Tayyaba Afzaal" className="avatar"/>
+            <UserGroupIcon className="avatar-icon" />
             <h3>Tayyaba Afzaal</h3>
             <p>UX Designer</p>
           </div>
           <div className="team-member">
-            <img src="https://api.dicebear.com/7.x/initials/svg?seed=AR" alt="Attique ur Rehman" className="avatar"/>
+            <UserGroupIcon className="avatar-icon" />
             <h3>Attique ur Rehman</h3>
             <p>Backend Engineer</p>
           </div>
           <div className="team-member">
-            <img src="https://api.dicebear.com/7.x/initials/svg?seed=TK" alt="Taha Khan" className="avatar"/>
+            <UserGroupIcon className="avatar-icon" />
             <h3>Taha Khan</h3>
             <p>ML Specialist</p>
           </div>
           <div className="team-member">
-            <img src="https://api.dicebear.com/7.x/initials/svg?seed=HJ" alt="Hassan Javed" className="avatar"/>
+            <UserGroupIcon className="avatar-icon" />
             <h3>Hassan Javed</h3>
             <p>Voice AI Expert</p>
           </div>
@@ -138,6 +138,12 @@ export default function App() {
           </div>
           <div className="step">
             <div className="step-number">3</div>
+            <ClockIcon className="step-icon" />
+            <h3>Check Availability</h3>
+            <p>AI checks and suggests available time slots</p>
+          </div>
+          <div className="step">
+            <div className="step-number">4</div>
             <ShieldCheckIcon className="step-icon" />
             <h3>Confirm Booking</h3>
             <p>Secure and instant appointment confirmation</p>
